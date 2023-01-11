@@ -52,7 +52,7 @@
             <p>Forecaster can be broken down into 2 sections, Historical and Forecasting. Historical mode will show past data from jan 1996 - aug 2022 and can be navigated using the calender on the top left.<br> Forecasting mode can be activated using the forecasting button and will show the next 12 months of data predicted.</p>
             <!--form for forecasting mode and date each updating data on line chart-->
             <form class="form_left_align">
-                <label for="date">Date:</label>
+                <label for="dateInput">Date:</label>
                 <input type="month" id="dateInput" name="date" min="1996-01" max="2022-08" oninput="UpdateDate()"><br>
 
                 <input type="radio" id="Historical" name="DataMode" value="Historical" oninput="ToggleHistoricalToForecastMode()" checked="checked">
