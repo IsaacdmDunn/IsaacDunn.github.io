@@ -1,10 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    
-    
-}
-
 /*add webfont
 font sourced from https://www.1001fonts.com/open-sans-font.html all rights belong to Steve Matteson*/
 @font-face {
@@ -114,13 +107,14 @@ article{
     grid-area: article;
 }
 
+
 /*sets grid area for footer, centre aligns text,
 background colour*/
 footer{
     text-align: center;
     background-color: #424;
     grid-area: footer;
-    margin-bottom: 25px;
+    margin-bottom: 0;
 }
 
 /*sets size, offset and decoration for text list*/
@@ -137,6 +131,8 @@ nav{
 
 /*sets navigation style*/
 nav ul{
+    margin: 0;
+    padding: 0;
     list-style-type: none;
     background-color: #AAA;
 }
@@ -194,9 +190,10 @@ article img{
     max-width: 100%;
 }
 
-/*stops h2 from being affected by article images*/
-article picture + article h2{
+/*fixes issue of floating image affecting h2 in professional history*/
+#professionalHistory h2{
     display: inline-block;
+    margin-top: 0;
 }
 
 
