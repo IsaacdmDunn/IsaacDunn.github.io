@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+/*add webfont
+font sourced from https://www.1001fonts.com/open-sans-font.html all rights belong to Steve Matteson*/
+@font-face {
+    font-family: openSans;
+    src: url(resourses/OpenSans-Regular.ttf);
+}
+
+/*sets font for website*/
+h1, h2, p, li, label, table{
+    /*sans-serif used as back up if open sans is not used*/
+    font-family: sans-serif; 
+    font-family: openSans;
+}
+
+/*sets border elements*/
+h1, picture, header, nav, article, footer, aside, .sidebar, .ProjectBlock, img{
+    border-radius: 5px;
+}
+
+/*sets header size and centre aligns*/
+h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/*aligns the header title to the side of the logo*/
+header h1{
+    font-size: 35px;
+    display:inline;
+    justify-content:none;
+}
+
+/*sets grid box for website layout, background colour
+ and margins*/
+body{
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-columns: auto 50% 20%;
+    grid-template-areas: 
+    "header header header" 
+    "navigation article sidebar" 
+    "footer footer footer";
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: linear-gradient(rgb(128,96,128), rgb(160,128,160));
+}
+
+/*sets header section of the grid*/
+header{
+    grid-area: header;
+    background-color: #424;
+}
+
+/*sets logo size in header*/
+header img{
+    height: 50px;
+    width: 50px;
+}
+
+/*sets table font, make width across article and collapses table to remove spaces*/
+table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+/*add padding and colour to represent the table header*/
+th{
+    padding: 10px;
+    background-color: #646;
+}
+
+/*adds padding to table data*/
+td{
+    padding: 8px;
+}
+
+/*adds border to table*/
+td, th{
+    border: 1px;
+    border-style: solid;
+    border-color: #202;
+}
+ 
+/*sets color for every other data row*/
+tr:nth-child(odd) {
+    background-color: #A8A;
+}
+tr:nth-child(even) {
+    background-color: #868;
+}
+
+/*sets aside section of the grid,
+background colour and padding/ margin*/
+aside{
+    grid-area: sidebar;
+    background-color: #646;
+    padding: 12px;
+    margin-bottom: 20px;    
+    
+    box-shadow: 0 2px 4px 0 rgba(179, 137, 179, 0.35), 0 3px 10px 0 rgba(221, 68, 221, 0.2);
+}
+
+/*sets article section of the grid*/
+article{
+    grid-area: article;
+}
+
+/*sets grid area for footer, centre aligns text,
+background colour*/
+footer{
+    text-align: center;
+    background-color: #424;
+    grid-area: footer;
+    margin-bottom: 25px;
+}
+
+/*sets size, offset and decoration for text list*/
+article ul{
+    font-size:20px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+/*sets navigation section for grid*/
+nav{
+    grid-area: navigation;
+}
+
+/*sets navigation style*/
+nav ul{
+    list-style-type: none;
+    background-color: #AAA;
+}
+
+/*set navigation text decoration and alignment*/
+nav li a{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/*navigation link hover decoration*/
+nav li a:hover{
+ background-color: #222;
+ color: #FFF;
+}
+
+/*navigation active decoration*/
+nav .active{
+    background-color: rgb(37, 22, 37);
+    color: #DFD;
+}
+
+/*makes border for headers in article and sidebar 
+as well as margin*/
+article h1, .sidebar h1{
+    margin-bottom: 15px;
+    border-bottom: #646 3px solid;
+    border-radius: 7px;
+
+}
+
+/*sets margin, font size and justifies text in articles*/
+article p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: justify;
+    
+}
+
+/*sets article pictures to float left, border, and margin/ padding*/
+article picture{
+    margin: 0,10px,10px,0;
+    border-bottom: #646 3px solid;
+    border-radius: 7px;
+    float:left;
+    margin-right: 10px;
+    max-width: 50%;
+}
+
+/*adds inline image so text can float right of image*/
+article img{
+    display: inline-block;
+    max-width: 100%;
+}
+
+/*stops h2 from being affected by article images*/
+article picture + article h2{
+    display: inline-block;
+}
+
+
+/*stretches form elements and sets margin*/
+form textarea, form input{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/*centres labels*/
+form label{
+    display: block;
+    text-align: center;
+}
+/*makes text on align left*/
+form p {
+    text-align: left;
+}
+
+/*for the forcaster forces checkboxes to be evenly spaced*/
+.form_left_align{
+    display: flex;
+}
+
+/*contact submission button*/
+#contactSubmit{
+    width: 20%;
+    height: 25px;
+}
+
+/*container for all projects has a flex box layout*/
+#ProjectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*block for a project sets size, colour padding/ margin*/
+.ProjectBlock {
+    padding: 20px;
+    margin: 30px;
+    height: auto;
+    width: 200px;
+    background-color: #222;
+    color: #EEE;
+    box-shadow: 0 2px 4px 0 rgba(179, 137, 179, 0.35), 0 3px 10px 0 rgba(221, 68, 221, 0.2);
+    border: 2px;
+    border-style: solid;
+    border-color: #AAA;
+}
+
+/*picture for a project block needs to be a set size and have no float*/
+.ProjectBlock picture{
+    max-height: 100px;
+    max-width: 200px;
+    border-color: #EEE;
+    float:none;
+    width: 100%;
+}
+
+/*sets colour, margin and text decoration*/
+.ProjectBlock a{
+    text-align: left;
+    margin-top: 10px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*colour for text to change to when hovering*/
+.ProjectBlock a:hover{
+    color: #A8A;
+}
+
+/*sets background gradient and text colour, padding and shadow*/
+header,.sidebar,article,nav, footer{
+    background-image: linear-gradient(rgba(32,32,32,0.98), rgba(64,32,64,0.95));
+    color: #EEE;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(64, 32, 64, .35), 0 3px 10px 0 rgba(64, 32, 64, .2);
+}
+
+/*size of sidebar images*/
+.sidebar img{
+    height: 100px;
+    width: 100%;
+}
+
+/*remove sidebar text decoration for links and text colour*/
+.sidebar a{
+    text-decoration: none;
+    color: #FFF;
+
+}
+
+/*sidebar text hover colour*/
+.sidebar a:hover{
+    color: #000;
+}
+
+
+/*if in mobile mode*/
+@media only screen and (max-width: 600px) {
+    /*hides sidebar*/
+    .sidebar {
+      display:none;
+    }
+
+    /*removes picture float*/
+    article picture{
+        float:none;
+    }
+
+    /*ensures screen is filled by the article if too small*/
+    article {
+        min-height: 30%;
+        height: auto;
+    }
+
+    /*widens image to fill screen*/
+    article img{
+        width: 100%;
+        max-height: 400px;
+    }
+
+    /*used to seperate pictures and h2*/
+    picture+h2{
+        margin-top: 15px;
+    }
+
+    /*removes grid box and side margins*/
+    body{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /*removes shadow*/
+    header,.sidebar,article,nav, footer{
+        box-shadow: none;
+    }
+
+    /*sets border elements*/
+    header, nav, article, footer{
+        border-radius: 0px;
+    }
+}
+
+/*if in smaller screen mode*/
+@media only screen and (max-width: 900px) and (min-width: 600px){
+    /*hides sidebar*/
+    .sidebar {
+      display:none;
+    }
+
+    /*removes sider from grid area and shrinks side margins*/
+    body{
+        display: grid;
+        grid-template-areas: "header header" "navigation article" "footer footer";
+        grid-template-columns: auto auto;
+        grid-template-rows: 75px auto 50px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}

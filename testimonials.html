@@ -1,0 +1,94 @@
+<!--testimonial page-->
+
+<html>
+    <!--header data-->
+    <head>
+        <title>Isaac Dunn</title>
+        <link rel="icon" type="image/x-icon" href="resourses/images/isaac_small.jpg">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <!--body-->
+    <body>
+        <!--website header with title and logo-->
+        <header> 
+            <!--vector image sourced from https://freesvg.org/powerbook-vector-drawing-->
+            <img src="resourses/images/logo.svg" alt="logo for website"> </img>
+            <h1>Isaac Dunn</h1>
+        </header>
+
+        <!--navigation bar-->
+        <nav id="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="academic_history.html">Academic History</a>
+                </li>
+                <li>
+                    <a href="professional_history.html">Professional History</a>
+                </li>
+                <!--active webpage is highlighted-->
+                <li>
+                    <a class="active" href="testimonials.html">Testimonials</a>
+                </li>
+                <li>
+                    <a href="contact.html">Get In Contact</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!--side bar for recommended projects and articles-->
+        <div class="sidebar">
+            <h1>Recent Projects</h1>
+            <!--link to forecaster-->
+            <aside>
+                <a href="forecaster.html">
+                    <h2>Forcaster</h2>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="resourses/images/forcaster.webp"> 
+                        <source media="(min-width: 600px)" srcset="resourses/images/forcaster.jpg"> 
+                        <source srcset="resourses/images/forcaster_small.webp"> 
+                        <source srcset="resourses/images/forcaster_small.jpg"> 
+                        <img src="images/forcaster.webp" alt="image showcasing my forcaster ESMAscript project">  
+                    </picture>
+                    <p>Forcaster made using ESMAscript.</p>
+                </a>
+            </aside> 
+            <!--link to currency converter-->
+            <aside>
+                <a href="currency_converter.html">
+                    <h2>Currency Converter</h2>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="resourses/images/converter.webp"> 
+                        <source media="(min-width: 600px)" srcset="resourses/images/converter.jpg"> 
+                        <source srcset="resourses/images/converter_small.webp"> 
+                        <source srcset="resourses/images/converter_small.jpg"> 
+                        <img src="images/converter.webp" alt="image showcasing my Currency Converter ESMAscript project">  
+                    </picture>
+                    <p>Currency Converter made using ESMAscript.</p>
+                </a>
+            </aside>
+        </div>
+
+        <!--main article-->
+        <article>
+            <h1>Testimonials</h1>
+            <h2>John Smith: Senior Engine Programmer at Consumer Softworks</h2>
+            <p>Isaac is a hard working individual, from the time I have known him for he has helped me to develop my product into what it is today.</p>      
+            <h2>Adam Black: University Peer</h2>
+            <p>In my time working with Isaac i have seen him grow as a person and while he is inexperienced with room to grow, he takes on new ideas and plans competently.</p>         
+        </article>
+            
+        <!--footer includes contact email and copyright-->
+        <footer>
+            <p>E-Mail: isaacdmdunn@gmail.com ©Isaac Dunn 2023</p>
+        </footer>
+    </body>
+</html>

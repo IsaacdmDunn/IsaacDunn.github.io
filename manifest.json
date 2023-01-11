@@ -1,0 +1,20 @@
+{
+    "short_name": "Isaac",
+    "name": "Isaac Dunn",
+    "id": "index.html",
+    "start_url":"index.html",
+    "orientation": "portrait",
+    "scope": "index.html",
+    "icons": [
+        {
+          "src": "/resourses/images/isaac_manifest.png",
+          "type": "image/png",
+          "purpose": "any",
+          "sizes": "512x512"
+        }
+    ],
+    "display": "fullscreen",
+    "theme_color": "#442244",
+    "background_color": "#AA4400",
+    "description": "A portfolio website"
+}

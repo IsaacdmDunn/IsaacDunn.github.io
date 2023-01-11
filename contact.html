@@ -1,0 +1,111 @@
+<!--contact page-->
+
+<html>
+    <!--header data-->
+    <head>
+        <title>Isaac Dunn</title>
+        <link rel="icon" type="image/x-icon" href="resourses/images/isaac_small.jpg">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <!--body-->
+    <body>
+        <!--website header with title and logo-->
+        <header> 
+            <!--vector image sourced from https://freesvg.org/powerbook-vector-drawing-->
+            <img src="resourses/images/logo.svg" alt="logo for website"> </img>
+            <h1>Isaac Dunn</h1>
+        </header>
+
+        <!--navigation bar-->
+        <nav id="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="academic_history.html">Academic History</a>
+                </li>
+                <li>
+                    <a href="professional_history.html">Professional History</a>
+                </li>
+                <li>
+                    <a href="testimonials.html">Testimonials</a>
+                </li>
+                <!--active webpage is highlighted-->
+                <li>
+                    <a class="active" href="contact.html">Get In Contact</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--side bar for recommended projects and articles-->
+        <div class="sidebar">
+            <h1>Recent Projects</h1>
+            <!--link to forecaster-->
+            <aside>
+                <a href="forecaster.html">
+                    <h2>Forcaster</h2>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="resourses/images/forcaster.webp"> 
+                        <source media="(min-width: 600px)" srcset="resourses/images/forcaster.jpg"> 
+                        <source srcset="resourses/images/forcaster_small.webp"> 
+                        <source srcset="resourses/images/forcaster_small.jpg"> 
+                        <img src="images/forcaster.webp" alt="image showcasing my forcaster ESMAscript project">  
+                    </picture>
+                    <p>Forcaster made using ESMAscript.</p>
+                </a>
+            </aside> 
+            <!--link to currency converter-->
+            <aside>
+                <a href="currency_converter.html">
+                    <h2>Currency Converter</h2>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="resourses/images/converter.webp"> 
+                        <source media="(min-width: 600px)" srcset="resourses/images/converter.jpg"> 
+                        <source srcset="resourses/images/converter_small.webp"> 
+                        <source srcset="resourses/images/converter_small.jpg"> 
+                        <img src="images/converter.webp" alt="image showcasing my Currency Converter ESMAscript project">  
+                    </picture>
+                    <p>Currency Converter made using ESMAscript.</p>
+                </a>
+            </aside>
+        </div>
+
+        <!--main article-->
+        <article>
+            <h1>Get In Contact</h1>
+            <h2>Details<h2>
+            <ul>
+                <li>Email: isaacdmdunn@gmail.com</li>
+                <li>Twitter: <a href="https://twitter.com/Isaac_dm_Dunn">@Isaac_dm_Dunn</a></li>
+                <li>Itch.io: <a href="https://isaac-dunn.itch.io/">Isaac Dunn</a></li>
+            </ul>
+            <h2>Get in touch</h2>
+            <form>
+                <label for="Email">E-Mail</label>
+                <input type="email" id="Email" name="Email" placeholder="From email@example.com">
+                <br>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="Email" name="Email" placeholder="Subject here">
+                <br>
+
+                <label for="content">Content</label><br>
+                <textarea id="content" name="content" placeholder="What would you like to talk about?" maxlength="500" style="height:200px"></textarea>
+                <br>
+                <input id="contactSubmit" type="submit" value="Submit">
+            </form>      
+        </article>
+            
+        <!--footer includes contact email and copyright-->
+         <footer>
+            <p>E-Mail: isaacdmdunn@gmail.com ©Isaac Dunn 2023</p>
+        </footer>
+    </body>
+</html>

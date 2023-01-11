@@ -1,0 +1,115 @@
+<!--forecaster page-->
+<html>
+    <!--header data-->
+    <head>
+        <title>Isaac Dunn</title>
+        <link rel="icon" type="image/x-icon" href="resourses/images/isaac_small.jpg">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="scripts/Forecaster.js"></script>
+    </head>
+    <!--on load load forecaster data and on resize redraw line chart, body for webpage-->
+    <body onload="LoadData()" onresize="drawChart()">
+       <!--website header with title and logo-->
+        <header> 
+            <!--vector image sourced from https://freesvg.org/powerbook-vector-drawing-->
+            <img src="resourses/images/logo.svg" alt="logo for website"> </img>
+            <h1>Isaac Dunn</h1>
+        </header>
+
+        <!--navigation bar-->
+        <nav id="navigation">
+            <ul>
+                <li>
+                    <a  href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="academic_history.html">Academic History</a>
+                </li>
+                <li>
+                    <a href="professional_history.html">Professional History</a>
+                </li>
+                <li>
+                    <a href="testimonials.html">Testimonials</a>
+                </li>
+                <li>
+                    <a href="contact.html">Get In Contact</a>
+                </li>
+                <!--active webpage-->
+                <li>
+                    <a class="active" href="projects.html">Projects</a>
+                </li>
+            </ul>
+        </nav>
+            
+        <!--article section for forecaster system-->
+        <article>
+            <h1>Forecaster</h1>
+            <h2>How to use it</h2>
+            <p>Forecaster can be broken down into 2 sections, Historical and Forecasting. Historical mode will show past data from jan 1996 - aug 2022 and can be navigated using the calender on the top left.<br> Forecasting mode can be activated using the forecasting button and will show the next 12 months of data predicted.</p>
+            <!--form for forecasting mode and date each updating data on line chart-->
+            <form class="form_left_align">
+                <label for="date">Date:</label>
+                <input type="month" id="dateInput" name="date" min="1996-01" max="2022-08" oninput="UpdateDate()"><br>
+
+                <input type="radio" id="Historical" name="DataMode" value="Historical" oninput="ToggleHistoricalToForecastMode()" checked="checked">
+                <label for="Historical">Historical</label>
+                <input type="radio" id="Forecast" name="DataMode" value="Forecast" oninput="ToggleHistoricalToForecastMode()">
+                <label for="Forecast">Forecast</label>    
+            </form>
+            <!--line chart tag-->
+            <div id="myChart" style="width:100%; height:500px; align-self:center; margin-top: 10px; margin-bottom: 10px;"></div>
+
+            <!--form for fuel types as checkboxes updating the line graph-->
+            <form class="form_left_align">
+                <label for="solidFuel"> Solid</label>
+                <input type="checkbox" id="solidFuel" name="solidFuel" value="Solid" onclick="ToggleSolid()">
+                <label for="GasFuel"> Gas</label>
+                <input type="checkbox" id="GasFuel" name="GasFuel" value="Gas" onclick="ToggleGas()">
+                <label for="ElectricFuel"> Electric</label>
+                <input type="checkbox" id="ElectricFuel" name="ElectricFuel" value="Electric" onclick="ToggleElectric()">
+                <label for="LiquidFuel"> Liquid</label>
+                <input type="checkbox" id="LiquidFuel" name="LiquidFuel" value="Liquid" onclick="ToggleLiquid()">
+            </form>
+        </article>
+        <!--side bar for recommended projects and articles-->
+        <div class="sidebar">
+            <h1>Recent Projects</h1>
+            <!--link to forecaster-->
+            <aside>
+                <a href="forecaster.html">
+                    <h2>Forcaster</h2>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="resourses/images/forcaster.webp"> 
+                        <source media="(min-width: 600px)" srcset="resourses/images/forcaster.jpg"> 
+                        <source srcset="resourses/images/forcaster_small.webp"> 
+                        <source srcset="resourses/images/forcaster_small.jpg"> 
+                        <img src="images/forcaster.webp" alt="image showcasing my forcaster ESMAscript project">  
+                    </picture>
+                    <p>Forcaster made using ESMAscript.</p>
+                </a>
+            </aside> 
+            <!--link to currency converter-->
+            <aside>
+                <a href="currency_converter.html">
+                    <h2>Currency Converter</h2>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="resourses/images/converter.webp"> 
+                        <source media="(min-width: 600px)" srcset="resourses/images/converter.jpg"> 
+                        <source srcset="resourses/images/converter_small.webp"> 
+                        <source srcset="resourses/images/converter_small.jpg"> 
+                        <img src="images/converter.webp" alt="image showcasing my Currency Converter ESMAscript project">  
+                    </picture>
+                    <p>Currency Converter made using ESMAscript.</p>
+                </a>
+            </aside>
+        </div>
+        
+        <!--footer includes contact email and copyright-->
+        <footer>
+            <p>E-Mail: isaacdmdunn@gmail.com ©Isaac Dunn 2023</p>
+        </footer>
+    </body>
+</html>

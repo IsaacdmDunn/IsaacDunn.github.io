@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+header h1{
+    font-size: 35px;
+    display:inline;
+    justify-content:none;
+}
+body{
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-columns: auto 70%;
+    grid-template-areas: 
+    "header header" 
+    "navigation article" 
+    "footer footer";
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    /*background-image: url(resourses/images/bg_image.jpg);*/
+}
+
+
+
+header{
+    margin-top: 10px;
+    grid-area: header;
+    background-color: #424;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    
+}
+
+article{
+    grid-area: article;
+}
+
+footer{
+    text-align: center;
+    background-color: #424;
+    grid-area: footer;
+    margin-bottom: 25px;
+}
+
+article ul{
+    font-size:medium;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+nav{
+    grid-area: navigation;
+}
+
+nav ul{
+    list-style-type: none;
+    width: 100%;
+    background-color: #AAA;
+}
+
+nav li{
+    background-color: #AAA;
+}
+
+nav li a{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav li a:hover{
+ background-color: #222;
+ color: #FFF;
+}
+
+.active{
+    background-color: rgb(37, 22, 37);
+    color: #DFD;
+}
+
+
+article h1, .sidebar h1, .sidebar h2{
+    margin-bottom: 15px;
+    border-bottom: #646 3px solid;
+    border-radius: 7px;
+
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* form textarea, form input{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form label{
+    display: block;
+    text-align: center;
+} */
+
+#contactSubmit{
+    width: 20%;
+    height: 25px;
+}
+    
+
+
+/* if sidebar exists then add margin to article*/
+
+
+
+
+.sidebar a{
+    display: block;
+}
+
+aside{
+    border: #222;
+    border-radius: 10px;
+    background-color: #646;
+    padding: 20px;
+    margin-bottom: 20px;    
+}
+
+#ProjectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ProjectBlock {
+    padding: 10px;
+    margin: 15px;
+    height: auto;
+    width: auto;
+    max-width: 25%;
+    box-shadow: 0 2px 4px 0 rgba(103, 21, 103, 0.15), 0 3px 10px 0 rgba(32, 1, 32, 0.1);
+    text-align: center;
+    background-color: #646;
+    color: #FFF;
+}
+
+article img{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 30%;
+    border-bottom: #646 3px solid;
+    border-radius: 7px;
+}
+
+header,.sidebar,article,nav, footer{
+    background-image: linear-gradient(rgba(32,32,32,0.98), rgba(64,32,64,0.95));
+    color: #EEE;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(64, 32, 64, .35), 0 3px 10px 0 rgba(64, 32, 64, .2);
+}
+
+
+
+
+
+.sidebar img{
+    height: 100px;
+    width: 100%;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #FFF;
+
+}
+
+.sidebar a:hover{
+    color: #000;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+      display:none;
+    }
+
+    .ProjectBlock{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .sidebar + article{
+        margin-right: 0px;
+    }
+
+    article picture{
+        width: auto;
+    }
+
+    article {
+        min-height: 70%;
+    }
+
+    article img{
+        width: 100%;
+    }
+
+
+    .header{
+        margin-right: 10px;
+    }
+
+    nav li{
+        width:auto;
+    }
+    
+
+    body{
+        display: flex;
+        flex-flow: column;
+        grid-gap: 0;
+    }
+
+    header,.sidebar,article,nav, footer{
+        box-shadow: none;
+    }
+
+    .header{
+        height: 50px;
+    }
+  }
+
+
+  @media only screen and (max-width: 900px) and (min-width: 600px){
+    .sidebar {
+      display:none;
+    }
+
+    .sidebar + article{
+        margin-right: 0px;
+    }
+
+    article picture{
+        width: auto;
+    }
+
+
+    .ProjectBlock{
+        max-width: 33%;
+        text-align: center;
+    }
+
+    .header{
+        margin-right: 10px;
+    }
+
+    body{
+        display: grid;
+        grid-template-areas: "header header" "navigation article" "footer footer";
+        grid-template-columns: auto 80%;
+        grid-template-rows: 75px auto 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+  }
