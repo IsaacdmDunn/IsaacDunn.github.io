@@ -365,6 +365,6 @@ header,.sidebar,article,nav, footer{
     }
 
     footer{
-        padding-bottom: 70px;
+        padding: 10px;
     }
 }
