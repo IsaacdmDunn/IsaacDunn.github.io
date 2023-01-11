@@ -364,5 +364,7 @@ header,.sidebar,article,nav, footer{
         margin-right: 2%;
     }
 
-    
+    footer{
+        padding-bottom: 70px;
+    }
 }
