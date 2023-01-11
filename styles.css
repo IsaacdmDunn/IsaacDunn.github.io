@@ -203,6 +203,11 @@ form textarea, form input{
     width: 100%;
 }
 
+/*sets height of text area*/
+form textarea{
+    height:200px;
+}
+
 /*centres labels*/
 form label{
     display: block;
