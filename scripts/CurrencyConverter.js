@@ -1,5 +1,5 @@
 //data
-let currencyData;//='{"usd":{"code":"USD","alphaCode":"USD","numericCode":"840","name":"U.S. Dollar","rate":1.1203575246881,"date":"Sun, 16 Oct 2022 11:55:01 GMT","inverseRate":0.89257221731818},"eur":{"code":"EUR","alphaCode":"EUR","numericCode":"978","name":"Euro","rate":1.1513036031045,"date":"Sun, 16 Oct 2022 11:55:01 GMT","inverseRate":0.86858062226461},"cad":{"code":"CAD","alphaCode":"CAD","numericCode":"124","name":"Canadian Dollar","rate":1.5467527665941,"date":"Sun, 16 Oct 2022 11:55:01 GMT","inverseRate":0.64651573386352},"jpy":{"code":"JPY","alphaCode":"JPY","numericCode":"392","name":"Japanese Yen","rate":165.44668135014,"date":"Sun, 16 Oct 2022 11:55:01 GMT","inverseRate":0.0060442433286629}}'
+let currencyData;
 
 
 function LoadData() {

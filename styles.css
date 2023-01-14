@@ -191,9 +191,10 @@ article img{
 }
 
 /*fixes issue of floating image affecting h2 in professional history*/
-#professionalHistory h2{
+#HistoryImageFormatting h2{
     display: inline-block;
     margin-top: 0;
+    width: 100%;
 }
 
 
