@@ -1,0 +1,125 @@
+<!--main page-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <!--header data-->
+    <head>
+        <title>Isaac Dunn</title>
+        <link rel="icon" type="image/x-icon" href="resourses/images/isaac_small.jpg">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <!--body-->
+    <body>
+        <!--website header with title and logo-->
+        <header> 
+            <!--vector image sourced from https://freesvg.org/powerbook-vector-drawing-->
+            <img src="resourses/images/logo.svg" alt="logo for website">
+            <h1>Isaac Dunn</h1>
+        </header>
+        <!--navigation bar-->
+        <nav id="navigation">
+            <ul>
+                <!--active webpage is highlighted-->
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="academic_history.html">Academic History</a>
+                </li>
+                <li>
+                    <a href="professional_history.html">Professional History</a>
+                </li>
+                <li>
+                    <a href="testimonials.html">Testimonials</a>
+                </li>
+                <li>
+                    <a href="contact.html">Get In Contact</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+            </ul>
+        </nav>
+        <!--side bar for recommended projects and articles-->
+        <div class="sidebar">
+            <h1>Recent Projects</h1>
+            <!--link to forecaster-->
+            <aside>
+                <a href="forecaster.html">
+                    <h2>Forcaster</h2>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="resourses/images/forcaster.webp"> 
+                        <source media="(min-width: 600px)" srcset="resourses/images/forcaster.jpg"> 
+                        <source media="(max-width: 600px)" srcset="resourses/images/forcaster_small.webp"> 
+                        <source media="(max-width: 600px)" srcset="resourses/images/forcaster_small.jpg"> 
+                        <img src="images/forcaster.webp" alt="image showcasing my forcaster ESMAscript project">  
+                    </picture>
+                    <p>Forcaster made using ESMAscript.</p>
+                </a>
+            </aside> 
+            <!--link to currency converter-->
+            <aside>
+                <a href="currency_converter.html">
+                    <h2>Currency Converter</h2>
+                    <picture>
+                        <source media="(min-width: 600px)" srcset="resourses/images/converter.webp"> 
+                        <source media="(min-width: 600px)" srcset="resourses/images/converter.jpg"> 
+                        <source media="(max-width: 600px)" srcset="resourses/images/converter_small.webp"> 
+                        <source media="(max-width: 600px)" srcset="resourses/images/converter_small.jpg"> 
+                        <img src="images/converter.webp" alt="image showcasing my Currency Converter ESMAscript project">  
+                    </picture>
+                    <p>Currency Converter made using ESMAscript.</p>
+                </a>
+            </aside>
+        </div>
+        <!--main article-->
+        <article>
+            <h1>About Me</h1>
+            <picture>
+                <source media="(min-width: 600px)" srcset="resourses/images/isaac.webp"> 
+                <source media="(min-width: 600px)" srcset="resourses/images/isaac.jpg"> 
+                <source media="(max-width: 600px)" srcset="resourses/images/isaac_small.webp"> 
+                <source media="(max-width: 600px)" srcset="resourses/images/isaac_small.jpg">
+                <img src="resourses/images/isaac.jpg" alt="image of my face">  
+            </picture>
+            <h2>Who Am I?</h2>
+            <p>
+                Hi I am Isaac Dunn, a software engineer and aspiring game developer. I am interested in AI for games and any various topics that catch my interest.
+Born in Gosport, Hampshire, I then moved to Lincolnshire before moving to Staffordshire for university where I studied my BSC and MSC in Games Programming and 
+Software Engineering respectively. I originally became interested in programming from the age of 8 from my love of games where I would spend countless hours 
+designing a game on paper before trying and failing to make it in Game Maker. Through the years I would eventually make my way to developing games in other engines 
+like Unity, Pico-8 and eventually 2D game engine development in Java. I would then go on to start college where I began to hone in my skills professionally learning 
+C++, C# as well as some website development skills before starting at Staffordshire University for Games Programming (BSC) where I looked into various disciplines like network, 
+low level, graphical and engine development which while I enjoyed, AI was the skill I enjoyed most using skills such as A* pathfinding, Boids, Genetic Algorithms and Neural Networks 
+with my dissertation being about the use of behavioural and emotional AI for story driven events as seen in games like Rimworld and Dwarf Fortress.
+
+            </p>  
+            <br> 
+
+            <h2>Skills</h2>
+            <p>Over the years I have gained a wide range of skills relavent to Software Engineering and Game Development with my 5 strongest skills listed below but I also have good skills in website development with skills in HTML, CSS and JS. Other skills include knowledge in Lua, Visual Studio, Blender, Network Development, etc.</p>
+            <ol>
+                <li>C++/C#</li>
+                <li>AI</li>
+                <li>Engine Development 2D/3D</li>
+                <li>Graphics</li>
+                <li>Unity Game Engine</li>
+            </ol>
+            <br>
+
+            <h2>Hobbies</h2>       
+            <p>
+                In my free time I enjoy doing various thing mostly playing games such as Immersive Sims, RTS games or multiplayer games with friends. I also enjoy making my own games joining various game jams such as Ludum Dare, GMTK and the Brackeys Game Jam. 
+            </p>
+            <br>
+        </article>
+          
+        <!--footer includes contact email and copyright-->
+        <footer>
+            <p>E-Mail: isaacdmdunn@gmail.com ©Isaac Dunn 2023</p>
+        </footer>
+    </body>
+</html>
